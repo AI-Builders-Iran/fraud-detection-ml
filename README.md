@@ -6,13 +6,42 @@
 
 Detect fraudulent financial transactions using Machine Learning with an interactive web interface and REST API.
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi)
-![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?logo=scikitlearn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?logo=python&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=python&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX-005CED?logo=onnx&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 </div>
+
+---
+
+# 📑 Table of Contents
+
+- [📖 Overview](#-overview)
+- [✨ Features](#-features)
+- [🏗 Project Structure](#-project-structure)
+- [📊 Dataset](#-dataset)
+- [🛠 Tech Stack](#-tech-stack)
+- [⚙ Machine Learning Pipeline](#-machine-learning-pipeline)
+- [🤖 Models](#-models)
+- [📈 Evaluation Metrics](#-evaluation-metrics)
+- [🚀 Installation](#-installation)
+- [▶ Running the API](#-running-the-api)
+- [🌐 Frontend](#-frontend)
+- [📊 Example Prediction](#-example-prediction)
+- [👥 Team](#-team)
+- [🤝 Contributing](#-contributing)
+- [⭐ Support](#-support)
+- [📄 License](#-license)
 
 ---
 
@@ -32,6 +61,7 @@ The project is designed as a complete ML application including:
 - Real-time prediction
 
 ---
+
 
 # ✨ Features
 
@@ -69,10 +99,9 @@ fraud-detection-ml/
 ├── notebooks/
 |   ├── Main.ipynb
 │
-|
-│
 ├── models/
-│
+├── API/
+|   ├── app.py
 |
 ├── requirements.txt
 │
@@ -83,18 +112,38 @@ fraud-detection-ml/
 
 # 📊 Dataset
 
-This project uses the famous **Credit Card Fraud Detection Dataset**.
+This project uses the **Credit Card Fraud Detection Dataset**, a widely used benchmark for fraud detection research and machine learning.
 
-Dataset characteristics:
+> **Source:** Credit Card Fraud Detection Dataset (Kaggle)
+
+📂 **View Dataset:**  
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+### Dataset Statistics
 
 | Property | Value |
 |-----------|--------|
 | Transactions | 284,807 |
 | Fraud Cases | 492 |
-| Classes | Binary |
+| Legitimate Cases | 284,315 |
 | Features | 30 |
+| Target | Binary Classification |
 
-Because fraud samples are extremely rare, the dataset is highly imbalanced, making it a realistic fraud detection problem.
+The dataset is highly imbalanced, with fraudulent transactions representing only **0.172%** of all transactions, making it a realistic and challenging classification problem.
+
+---
+
+# 🛠 Tech Stack
+
+- Python
+- Scikit-Learn
+- Pandas
+- NumPy
+- FastAPI
+- HTML/CSS/JavaScript
+- ONNX
+- Docker
+- Git & GitHub
 
 ---
 
@@ -227,11 +276,21 @@ The interface allows users to
 
 # 👥 Team
 
-Developed by
+This project is developed by the **AI Builders Iran** team.
 
-**AI Builders Iran**
+| Member | GitHub | Role |
+|--------|--------|------|
+| Hossein Heydari | [@HosseinHeydari2004](https://github.com/HosseinHeydari2004) | Project Lead / Organization Admin |
+| Eyna Shabani | [@Eyna-A](https://github.com/Eyna-A) | Maintainer |
+| Amir Mohammad Hatamzadeh | [@hatamzadeh86](https://github.com/hatamzadeh86) | Maintainer |
+| Faribanass | [@faribanass](https://github.com/faribanass) | Contributor |
+| Farshad Zargari | [@farshadz1997](https://github.com/farshadz1997) | Contributor |
+| FatemeAmlahi | [@FatemeAmlahi](https://github.com/FatemeAmlahi) | Contributor |
+| Maral Farahmandfar | [@MaralFarahmandfar](https://github.com/MaralFarahmandfar) | Contributor |
+| mohammdz1997 | [@mohammdz1997](https://github.com/mohammdz1997) | Contributor |
+| Seyede Reyhane Khorashadizade | [@Seyede-Reyhane-Khorashadizade](https://github.com/Seyede-Reyhane-Khorashadizade) | Contributor |
 
-We build open-source Machine Learning and AI projects to learn, collaborate, and grow together.
+We collaborate to build open-source Machine Learning and AI projects while learning and growing together.
 
 ---
 
