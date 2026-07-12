@@ -103,6 +103,8 @@ fraud-detection-ml/
 ├── API/
 |   ├── app.py
 |
+├──DockerFile
+|
 ├── requirements.txt
 │
 └── README.md
