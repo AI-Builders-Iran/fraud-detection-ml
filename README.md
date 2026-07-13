@@ -285,11 +285,11 @@ This project is developed by the **AI Builders Iran** team.
 | Hossein Heydari | [@HosseinHeydari2004](https://github.com/HosseinHeydari2004) | Project Lead / Organization Admin |
 | Eyna Shabani | [@Eyna-A](https://github.com/Eyna-A) | Maintainer |
 | Amir Mohammad Hatamzadeh | [@hatamzadeh86](https://github.com/hatamzadeh86) | Maintainer |
-| Faribanass | [@faribanass](https://github.com/faribanass) | Contributor |
+| Fatemeh Amlahi | [@FatemeAmlahi](https://github.com/FatemeAmlahi) | Contributor |
 | Farshad Zargari | [@farshadz1997](https://github.com/farshadz1997) | Contributor |
-| FatemeAmlahi | [@FatemeAmlahi](https://github.com/FatemeAmlahi) | Contributor |
 | Maral Farahmandfar | [@MaralFarahmandfar](https://github.com/MaralFarahmandfar) | Contributor |
-| mohammdz1997 | [@mohammdz1997](https://github.com/mohammdz1997) | Contributor |
+| Mohaddeseh Mohamadiha | [@Mohii722](https://github.com/Mohii722) | Contributor |
+| Mohammad Zarei | [@mohammdz1997](https://github.com/mohammdz1997) | Contributor |
 | Seyede Reyhane Khorashadizade | [@Seyede-Reyhane-Khorashadizade](https://github.com/Seyede-Reyhane-Khorashadizade) | Contributor |
 
 We collaborate to build open-source Machine Learning and AI projects while learning and growing together.
