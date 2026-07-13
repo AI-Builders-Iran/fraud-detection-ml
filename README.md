@@ -282,9 +282,9 @@ This project is developed by the **AI Builders Iran** team.
 
 | Member | GitHub | Role |
 |--------|--------|------|
-| Hossein Heydari | [@HosseinHeydari2004](https://github.com/HosseinHeydari2004) | Project Lead / Organization Admin |
+| Amir Mohammad Hatamzadeh | [@hatamzadeh86](https://github.com/hatamzadeh86) | Organization Owner / Project Lead |
+| Hossein Heydari | [@HosseinHeydari2004](https://github.com/HosseinHeydari2004) | Technical Operations Coordinator |
 | Eyna Shabani | [@Eyna-A](https://github.com/Eyna-A) | Maintainer |
-| Amir Mohammad Hatamzadeh | [@hatamzadeh86](https://github.com/hatamzadeh86) | Maintainer |
 | Fatemeh Amlahi | [@FatemeAmlahi](https://github.com/FatemeAmlahi) | Contributor |
 | Farshad Zargari | [@farshadz1997](https://github.com/farshadz1997) | Contributor |
 | Maral Farahmandfar | [@MaralFarahmandfar](https://github.com/MaralFarahmandfar) | Contributor |
