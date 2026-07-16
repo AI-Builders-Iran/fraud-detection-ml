@@ -292,6 +292,7 @@ This project is developed by the **AI Builders Iran** team.
 | Mohammad Zarei | [@mohammdz1997](https://github.com/mohammdz1997) | Contributor |
 | Seyede Reyhane Khorashadizade | [@Seyede-Reyhane-Khorashadizade](https://github.com/Seyede-Reyhane-Khorashadizade) | Contributor |
 Erfan Jenab | [@Erfanjenab](https://github.com/Erfanjenab) | Contributor
+Nelisa Zarenejad | [@Nellshere](https://github.com/Nellshere) | Contributor
 
 We collaborate to build open-source Machine Learning and AI projects while learning and growing together.
 
