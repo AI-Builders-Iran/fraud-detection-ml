@@ -6,7 +6,11 @@ import pandas as pd
 
 app = FastAPI()
 
-model_file = joblib.load(Path("./model/fraud_model_final.joblib").resolve())
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+MODEL_PATH = BASE_DIR / "model" / "fraud_model_final.joblib"
+
+model_file = joblib.load(MODEL_PATH)
 model = model_file["model"]
 
 class InputData(BaseModel):
