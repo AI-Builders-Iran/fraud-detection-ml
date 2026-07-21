@@ -4,7 +4,7 @@
 
 ### Intelligent Credit Card Fraud Detection System
 
-Detect fraudulent financial transactions using Machine Learning with an interactive web interface and REST API.
+Detect fraudulent financial transactions using Machine Learning with  REST API.
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
@@ -15,7 +15,6 @@ Detect fraudulent financial transactions using Machine Learning with an interact
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=python&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
-![ONNX](https://img.shields.io/badge/ONNX-005CED?logo=onnx&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -33,10 +32,10 @@ Detect fraudulent financial transactions using Machine Learning with an interact
 - [🛠 Tech Stack](#-tech-stack)
 - [⚙ Machine Learning Pipeline](#-machine-learning-pipeline)
 - [🤖 Models](#-models)
+- [📈 Model Performance](#-model-performance)
 - [📈 Evaluation Metrics](#-evaluation-metrics)
 - [🚀 Installation](#-installation)
 - [▶ Running the API](#-running-the-api)
-- [🌐 Frontend](#-frontend)
 - [📊 Example Prediction](#-example-prediction)
 - [👥 Team](#-team)
 - [🤝 Contributing](#-contributing)
@@ -57,7 +56,6 @@ The project is designed as a complete ML application including:
 - Model training
 - Model evaluation
 - Fast API
-- Interactive Web Interface
 - Real-time prediction
 
 ---
@@ -65,25 +63,15 @@ The project is designed as a complete ML application including:
 
 # ✨ Features
 
-✅ Binary Fraud Classification
-
-✅ Data Cleaning & Preprocessing
-
-✅ Feature Scaling
-
-✅ Handling Imbalanced Dataset
-
-✅ Multiple Machine Learning Models
-
-✅ Model Comparison
-
-✅ Performance Evaluation
-
-✅ using FastAPI
-
-✅ Interactive HTML Frontend
-
-✅ Real-time Fraud Prediction
+- Binary fraud classification
+- Data cleaning and preprocessing
+- Feature scaling
+- Handling imbalanced datasets
+- Multiple machine learning models
+- Model comparison
+- Performance evaluation
+- REST API using FastAPI
+- Real-time fraud prediction
 
 ---
 
@@ -93,21 +81,33 @@ The project is designed as a complete ML application including:
 fraud-detection-ml/
 
 │
-├── reports/
-│   ├── figures/
-│
-├── notebooks/
-|   ├── Main.ipynb
-│
-├── models/
 ├── API/
 |   ├── app.py
 |
-├──DockerFile
+├── data/
+|   ├── creditcard_raw_backup.csv.gz
 |
-├── requirements.txt
+├── model/
+|   ├── fraud_model_final.joblib
+|
+├── notebooks/
+|   ├── Main.ipynb
+|
+├── reports/
+│   ├── figures/
 │
-└── README.md
+├── Team_Report/
+|   ├──
+|
+├── .dockerignore
+|
+├── .gitignore
+|
+├──Dockerfile
+|
+├── README.md
+│
+└── requirements.txt
 ```
 
 ---
@@ -119,7 +119,7 @@ This project uses the **Credit Card Fraud Detection Dataset**, a widely used ben
 > **Source:** Credit Card Fraud Detection Dataset (Kaggle)
 
 📂 **View Dataset:**  
-https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+[Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
 ### Dataset Statistics
 
@@ -137,15 +137,36 @@ The dataset is highly imbalanced, with fraudulent transactions representing only
 
 # 🛠 Tech Stack
 
-- Python
+## Machine Learning
+
 - Scikit-Learn
+- XGBoost
+- LightGBM
+- Optuna
+
+## Backend
+
+- FastAPI
+
+## Data Processing
+
 - Pandas
 - NumPy
-- FastAPI
-- HTML/CSS/JavaScript
-- ONNX
+
+## Visualization
+
+- Matplotlib
+- Seaborn
+- Plotly
+
+## Deployment
+
 - Docker
-- Git & GitHub
+
+## Version Control
+
+- Git
+- GitHub
 
 ---
 
@@ -177,9 +198,6 @@ Save Model
      │
      ▼
 FastAPI
-     │
-     ▼
-Frontend
 ```
 
 ---
@@ -189,12 +207,27 @@ Frontend
 The project supports comparing multiple models.
 
 - Logistic Regression
-- Decision Tree
-- Random Forest
 - XGBoost
 - LightGBM
-- CatBoost
-- Neural Network (MLP)
+
+---
+
+# 📈 Model Performance
+
+The final production model is **LightGBM (LGBMClassifier)** with a **classification threshold of 0.10**, selected to improve fraud detection recall while maintaining high precision on the highly imbalanced dataset.
+
+| Metric | Score |
+|:--------|------:|
+| Model | LightGBM |
+| Classification Threshold | **0.10** |
+| Accuracy | **99.95%** |
+| Precision | **89.29%** |
+| Recall | **78.95%** |
+| F1-Score | **83.80%** |
+| PR-AUC (Test Set) | **0.8201** |
+| PR-AUC (Cross Validation) | **0.8435** |
+
+> **Note:** Because the dataset is highly imbalanced, model selection was primarily based on **Precision, Recall, F1-Score, and PR-AUC**, rather than Accuracy alone.
 
 ---
 
@@ -237,42 +270,74 @@ pip install -r requirements.txt
 # ▶ Running the API
 
 ```bash
-uvicorn api.main:app --reload
+uvicorn API.app:app --reload
 ```
 
-Open
+Once the server is running, open:
+
+### Swagger UI
 
 ```
 http://127.0.0.1:8000/docs
 ```
 
----
-
-# 🌐 Frontend
-
-Launch
+### ReDoc
 
 ```
-frontend/index.html
+http://127.0.0.1:8000/redoc
 ```
-
-or serve using any static web server.
-
-The interface allows users to
-
-- Enter transaction information
-- Predict fraud probability
-- View prediction result
-- Display model confidence
 
 ---
 
-# 📊 Example Prediction
+### Example Request
 
-| Amount | Time | Prediction |
-|---------|------|------------|
-| 200.5 | 53452 | Legitimate |
-| 1540.8 | 78312 | Fraud |
+```http
+POST /predict
+Content-Type: application/json
+```
+
+```json
+{
+  "Time": 406.0,
+  "V1": -1.359807,
+  "V2": -0.072781,
+  "V3": 2.536347,
+  "V4": 1.378155,
+  "V5": -0.338321,
+  "V6": 0.462388,
+  "V7": 0.239599,
+  "V8": 0.098698,
+  "V9": 0.363787,
+  "V10": 0.090794,
+  "V11": -0.551600,
+  "V12": -0.617801,
+  "V13": -0.991390,
+  "V14": -0.311169,
+  "V15": 1.468177,
+  "V16": -0.470401,
+  "V17": 0.207971,
+  "V18": 0.025791,
+  "V19": 0.403993,
+  "V20": 0.251412,
+  "V21": -0.018307,
+  "V22": 0.277838,
+  "V23": -0.110474,
+  "V24": 0.066928,
+  "V25": 0.128539,
+  "V26": -0.189115,
+  "V27": 0.133558,
+  "V28": -0.021053,
+  "Amount": 149.62
+}
+```
+
+### Example Response
+
+```json
+{
+  "prediction": 0.0,
+}
+```
 
 ---
 
